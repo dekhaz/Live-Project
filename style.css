@@ -1,0 +1,150 @@
+/*@font-face {
+    font-family: 'blood_crowregular';
+    src: url('../fonts/bloodCrow/bloodcrow-webfont.woff2') format('woff2'),
+         url('../fonts/bloodCrow/bloodcrow-webfont.woff') format('woff'),
+         url('../fonts/bloodCrow/bloodcrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'you_murderer';
+    src: url('../fonts/youMurderer/youmurdererbb_reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.btn {
+    /*/color: white;
+    font-weight: bold;
+    background-color: #cd0f0f;*/
+    /*9/30 New button styles*/
+     display: inline-block;
+     border: none;
+     color: #FFF;
+     border-radius: 4px;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     font-family: Verdana;
+     width: auto;
+     height: auto;
+     font-size: 16px;
+     padding: 10px 40px;
+     box-shadow: inset 0px 1px 1px 0 #FFC7C7,0px 5px 0px 0 #524951,0px 8px 5px 0 #464646;
+     -moz-box-shadow: inset 0px 1px 1px 0 #FFC7C7,0px 5px 0px 0 #524951,0px 8px 5px 0 #464646;
+     -webkit-box-shadow: inset 0px 1px 1px 0 #FFC7C7,0px 5px 0px 0 #524951,0px 8px 5px 0 #464646;
+     text-shadow: 0 1px 0 #6d4768;
+     background-image: linear-gradient(to left, #BC5A5A, #8D0707);
+     background-color: #BA1A1A;
+
+
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    /*added box shadow */
+    outline: 0 none;
+    background-color: #cd0f0f;
+    color: white; 
+    box-shadow: inset 0px 1px 1px 0 #FFC7C7,0px 5px 0px 0 #524951,0px 8px 5px 0 #464646;
+    
+}
+
+.btn:hover {
+    /*9/30 changed the properties to the new style of buttons*/
+   border-top-color: #782828;
+   background: #782828;
+   color: #cccccc;
+   }
+}
+
+.btn:active {
+    /*9/30 changed the properties to the new style of buttons*/
+   border-top-color: #5c1b1b;
+   background: #5c1b1b;
+   transform: translateY(4px);
+}
+
+/*Change this body font -- needs to be different than the title font
+-- THIS NEEDS TO BE -- 
+	font-family: 'face_your_fears';
+	src: url('../fonts/faceYourFears/FaceYourFears.ttf') format ('truetype');
+	but when I change it to this it kills the body font even though it shouldn't in theory -- this issue needs to be tracked down
+*/
+body {
+    /*font-family: 'times new roman', serif;
+	font-family: 'you_murderer';
+    src: url('../fonts/youMurderer/youmurdererbb_reg.ttf') format('truetype');*/
+	font-family: 'face_your_fears';
+	src: url('../fonts/faceYourFears/FaceYourFears.ttf') format ('truetype');
+    font-size: 19px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    background-color: black;
+}
+
+#intro {
+    font-family: 'you_murderer';
+    font-size: 60px;
+}
+
+/*Change this time font -- needs to be different than the title font?*/
+#time {
+    font-family: 'you_murderer';
+	font-size: 50px;
+	color: #cd0f0f;
+}
+
+#button {
+    padding: 3px;
+    margin: 5px;
+}
+
+footer {
+    font-size: 12px;
+    margin: auto;
+    margin-left: -9.5%;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#coffins {
+    font-size: 50px;
+}
+
+#coffins button {
+    color: black;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:0; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:0; }
+}
+@-moz-keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:0; }
+}
+
+/*9/30/2016 change to alignment of the typed effect*/
+#instructions {
+    text-align: left;
+    
+}
