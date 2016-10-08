@@ -73,10 +73,14 @@
 }
 
 #logo{
+    /*modified the appearance of logo 10/5/2016*/
 	float: left;
 	position: fixed;
-	left: 45%;
+	left: 42%;
 	top: 37%;
+    height: 16%;
+    width: 16%;
+    resize: both;
 }
 
 /*changed the percentage 9/30*/
@@ -85,12 +89,13 @@
     
 }
 
-/*changed the percentage 9/30*/
+/*changed the percentage 9/30//  changing percentage to make everything appear the same 10/5/2016*/
 .frontButton{
-	margin-top: 10%;
+	margin-top: 3%;
 	padding-left: 33px;
 	padding-right: 33px;
 }
+
 
 .frontButton2{
 	padding: 20px;
@@ -120,8 +125,10 @@ ul{
 }
 
 
+
 #aboutUs{
-	margin-top: 20%;
+    /*changed the about margin top percentage 10/5/2016*/
+	margin-top: 3%;
 	font-family: 'faceYourFears';
 }
 
