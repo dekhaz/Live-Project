@@ -1,11 +1,3 @@
-/*@font-face {
-    font-family: 'blood_crowregular';
-    src: url('../fonts/bloodCrow/bloodcrow-webfont.woff2') format('woff2'),
-         url('../fonts/bloodCrow/bloodcrow-webfont.woff') format('woff'),
-         url('../fonts/bloodCrow/bloodcrow.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}*/
 
 @font-face {
     font-family: 'you_murderer';
@@ -19,7 +11,7 @@
     font-weight: bold;
     background-color: #cd0f0f;*/
     /*9/30 New button styles*/
-     display: inline-block;
+    /* display: inline-block;
      border: none;
      color: #FFF;
      border-radius: 4px;
@@ -28,42 +20,65 @@
      font-family: Verdana;
      width: auto;
      height: auto;
-     font-size: 16px;
-     padding: 10px 40px;
+     font-size: 16px;*/
+     /*changing the padding 10/16/2016*/
+     /*padding: 10px 40px;
      box-shadow: inset 0px 1px 1px 0 #FFC7C7,0px 5px 0px 0 #524951,0px 8px 5px 0 #464646;
      -moz-box-shadow: inset 0px 1px 1px 0 #FFC7C7,0px 5px 0px 0 #524951,0px 8px 5px 0 #464646;
      -webkit-box-shadow: inset 0px 1px 1px 0 #FFC7C7,0px 5px 0px 0 #524951,0px 8px 5px 0 #464646;
      text-shadow: 0 1px 0 #6d4768;
      background-image: linear-gradient(to left, #BC5A5A, #8D0707);
      background-color: #BA1A1A;
+     /*adding width for same size buttons 10/5/2016*/
+    /* width: auto;
+     height:auto;*/
+     display:inline-block;
+     width:200px;
+     padding:10px;
+     color: #fff;
+     border:2px solid #fff;
+     text-align:center;
+     outline:none;
+     text-decoration:none;
+     border-radius:0;
+     background-color:#000;
+     transition: border-color 0.3s ease-out, color 0.3s ease-out;
 
 
 }
 
-.btn:focus, .btn:active:focus, .btn.active:focus {
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn:hover {
     /*added box shadow */
-    outline: 0 none;
+    /*outline: 0 none;
     background-color: #cd0f0f;
     color: white; 
-    box-shadow: inset 0px 1px 1px 0 #FFC7C7,0px 5px 0px 0 #524951,0px 8px 5px 0 #464646;
-    
+    box-shadow: inset 0px 1px 1px 0 #FFC7C7,0px 5px 0px 0 #524951,0px 8px 5px 0 #464646;*/
+    background-color: #000;
+    color: #000;
+    color: #ff3d3d;
+    border-color: #ff3d3d;
+    transition: border-color 0.4s ease-in,
+              color 0.4s ease-in;
+    background-color: #fff; /* fallback */
+    background-color: rgba(56, 56, 56, 0.63);
 }
 
-.btn:hover {
-    /*9/30 changed the properties to the new style of buttons*/
-   border-top-color: #782828;
+    /*.btn:hover {*/
+        /*9/30 changed the properties to the new style of buttons*/
+        /*/border-top-color: #782828;
    background: #782828;
    color: #cccccc;
-   }
-}
+   }*/
+        /*background-color: #fff;
+        color: #000;
+    }*/
 
 .btn:active {
     /*9/30 changed the properties to the new style of buttons*/
-   border-top-color: #5c1b1b;
-   background: #5c1b1b;
+   border-top-color: #ff3d3d;
+   background: #ff3d3d;
    transform: translateY(4px);
 }
-
 /*Change this body font -- needs to be different than the title font
 -- THIS NEEDS TO BE -- 
 	font-family: 'face_your_fears';
@@ -88,7 +103,6 @@ body {
     font-size: 60px;
 }
 
-/*Change this time font -- needs to be different than the title font?*/
 #time {
     font-family: 'you_murderer';
 	font-size: 50px;
@@ -98,10 +112,13 @@ body {
 #button {
     padding: 3px;
     margin: 5px;
+    
 }
 
 footer {
-    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight:bold;
     margin: auto;
     margin-left: -9.5%;
 }
@@ -147,4 +164,9 @@ footer {
 #instructions {
     text-align: left;
     
+}
+
+#yes, #no {
+
+    width:auto;
 }
