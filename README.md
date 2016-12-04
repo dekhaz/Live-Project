@@ -1,5 +1,7 @@
 # Live-Project
 This is code written by me for my live project at the Tech Academy. 
+Check out our project repository at https://github.com/TextBasedHorror/TextBasedHorror!
+
 
 The project is a web application; a text-based horror game.
 The original program was given to me to be refined.
@@ -7,7 +9,7 @@ The original program was given to me to be refined.
   The text was to appear as if it were being typed out or texted from the understandably nervous and frantic main character.
   The system also had a few errors in resolving asynchronous events; specifically it was showing buttons for options that had not been typed out to the user, destroying suspense in certain cases.
   
-  For the second week, I attempted to acheive these goals. My spirits were high and I developed a solution that involved modifying callbacks and their execution that allowed the appearance of command buttons to be controlled in the manner desired.
+  For the second week, I attempted to achieve these goals. My spirits were high and I developed a solution that involved modifying callbacks and their execution that allowed the appearance of command buttons to be controlled in the manner desired.
   I then set to the task of making our text appear in the manner we desired. The text was being handled with the typed.js module; which allowed a single value to be passed that controls the speed of the text. It is a very useful module, but I had difficulties in changing the rate at which text was being shown. If the typing speed was modified before the command was called then all of the text would be printed at the new speed. I had created a command that accelerated print speed when a key was pressed, and reset it when the key was released. It did its job but only if a key was being pressed when the text began to be printed.
   I set myself towards modifying a few parts of this program so that the text could be printed in a different manner without using the typed.js module. There were a few difficulties in implementing this. 
   The program's script was executed by calling unique functions for every part of the story and each of these linked to the others in slightly different ways. There were choices that resulted in success, or failure, and instances where choices pointed forward to the same function. Some choices opened multiple paths that would later remerge. It was a functional system that did its job but was difficult to modify.
